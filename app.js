@@ -27,8 +27,16 @@ var mobileNet = ['Jazz' , 'Zong' , 'Ufone' , 'Telenore'];
 console.log(mobileNet);
 
 // Q8
-var qualification = [ 'SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M.Phil' , 'PhD'];
-console.log(qualification);
+var arr = [ 'SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M.Phil' , 'PhD'];
+console.log('Qualifications');
+console.log('1)' + arr[0]);
+console.log('2)' + arr[1]);
+console.log('3)' + arr[2]);
+console.log('4)' + arr[3]);
+console.log('5)' + arr[4]);
+console.log('6)' + arr[5]);
+console.log('7)' + arr[6]);
+console.log('8)' + arr[7]);
 
 // Q9
 var movie = [];
@@ -54,6 +62,30 @@ var score = [320 , 230 , 480];
 var percentage = [64 , 46 , 96];
 console.log(studentNames , score , percentage);
 
+// Q12
+var colors = ['red' , 'green' , 'blue'];
+// a
+var inputA = prompt('Start ma konsa color add krna ha');
+colors.unshift(inputA);
+console.log(colors);
+// b
+var inputB = prompt('Last ma konsa color add krna ha');
+colors.unshift(inputB);
+console.log(colors);
+// c
+var inputC = prompt('1 or color batao jisko ma add kr dunga');
+var inputD = prompt('Bs Last ma 1 or add kr dunga');
+colors.unshift(inputC);
+colors.unshift(inputD);
+// d
+colors.shift();
+// e
+colors.pop();
+// f
+var inputE = Number(prompt("in which index no you want to add a color"));
+var inputF = Number(prompt(" which color do you want to add a color"));
+colors.splice(inputE , 0 ,inputF)
+
 // Q13
 var scores = ['320' , '230' , '480' , '120'];
 console.log(scores.sort());
@@ -65,13 +97,8 @@ console.log(fruits.sort());
 // Q15
 var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
 var selectedCities = cities.slice(2 , 4);
-console.log("Cities Array: " + cities + "<br><br>");
+console.log("Cities Array: " + cities);
 console.log("Selected Cities Array: " + selectedCities);
-
-// Q16
-var arr = ['This', 'is', 'my', 'cat'];
-var singestring = arr.join(' ');
-console.log(singestring);
 
 // Q17
 var devices = [];
@@ -80,11 +107,11 @@ devices.push("mouse");
 devices.push("printer");
 devices.push("monitor");
 
-console.log("Original Array: " + devices + '<br>');
-console.log("FIFO Order:<br>");
+console.log("Original Array: " + devices);
+console.log("FIFO Order:");
 if (devices.length > 0) {
     var value = devices.shift();
-    console.log(value + "<br>");
+    console.log(value);
 }
 
 // Q18
@@ -93,24 +120,13 @@ devices.push("keyboard");
 devices.push("mouse");
 devices.push("printer");
 devices.push("monitor");
-console.log("Original Array: " + devices + "<br><br>");
-console.log("LIFO Order:<br>");
+console.log("Original Array: " + devices);
+console.log("LIFO Order:");
 
 if (devices.length > 0) {
     var value = devices.pop();
-    console.log(value + "<br>");
+    console.log(value);
 }
-
-// Q19
-var manufacturers = ['Apple' , 'Samsung' , 'Mototola' , 'Nokia' , 'Sony' , 'Haier'];
-
-document.write("<select>");
-
-for (var i = 0; i < manufacturers.length; i++) {
-    document.write("<option>" + manufacturers[i] + "</option>");
-}
-
-document.write("</select>");
 
 // Q20
 var multiArray = [[], [], []];
@@ -123,4 +139,3 @@ var arr = [
 ];
 
 console.log(arr);
-
